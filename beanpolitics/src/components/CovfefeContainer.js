@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Row, Col, Button, Modal, Card } from 'antd';
+import { Row, Col, Button, Modal, Progress } from 'antd';
 
 import {
     TextHeader,
@@ -13,7 +13,8 @@ import {
     RedText,
     WhiteText,
     BlueText,
-    ArticleContainer
+    ArticleContainer,
+    LastFlexOrder
 } from "./styled-components";
 
 import { connect } from 'react-redux';
@@ -23,12 +24,83 @@ class CovfefeContainer extends Component {
     constructor(props){
         super(props);
         this.state = {
-            visible: false
+            visible: false,
+            totalCount: 0,
+            rightCount: 0,
+            wrongCount: 0,
+            totalPercent: 0,
+            rightPercent: 0
         }
     }
 
-    checkPost = () => {
+    checkIfReal = () => {
+        let answer = this.props.redditPostData.subreddit === 'nottheonion' ? true : false;
+        if(answer){
+            this.increaseRight();
+        } else {
+           this.increaseWrong();
+        }
+        this.increaseTotal();
         this.showModal();
+        return answer;
+    };
+
+    setProgressBar = () => {
+        let totalPercent = this.state.totalCount * 100;
+        if(totalPercent >= 100){
+            totalPercent = 100;
+        }
+
+        let rightPercent = 0;
+
+        if(this.state.rightCount !== 0){
+            rightPercent = (this.state.rightCount / this.state.totalCount) * 100;
+        }
+
+        let wrongPercent = 0;
+
+        if(this.state.wrongCount !== 0){
+            wrongPercent = (this.state.wrongCount / this.state.totalCount) * 100;
+        }
+
+        this.setState({
+            totalPercent: totalPercent,
+            rightPercent: rightPercent,
+            wrongPercent: wrongPercent,
+        })
+
+    };
+
+    checkIfFake = () => {
+        let answer = this.props.redditPostData.subreddit === 'TheOnion' ? true : false;
+        if(answer){
+            this.increaseRight();
+        } else {
+            this.increaseWrong();
+        }
+        this.increaseTotal();
+        this.showModal();
+        return answer;
+    };
+
+    increaseWrong = () => {
+        let wrongCount = this.state.wrongCount + 1;
+
+        this.setState({wrongCount})
+    };
+
+    increaseRight = () => {
+        let rightCount = this.state.rightCount + 1;
+
+        this.setState({ rightCount })
+    };
+
+    increaseTotal = () => {
+        let totalCount = this.state.totalCount + 1;
+
+        this.setState({ totalCount }, () => {
+            this.setProgressBar();
+        });
     };
 
     showModal = () => {
@@ -97,21 +169,35 @@ class CovfefeContainer extends Component {
 
                     <Col span={24}>
                         <Row type="flex" align="middle" justify="space-around">
-                            <Col xs={24} sm={8}>
+                            <Col xs={{span: 24, order: 0}} sm={{span: 8, order: 0}}>
                                 <Row type="flex" justify="center">
                                     <VerticleMarginOnStack>
-                                        <Button type="primary" onClick={this.checkPost}>Real News</Button>
+                                        <Button type="primary" onClick={this.checkIfReal}>Real News</Button>
                                     </VerticleMarginOnStack>
                                 </Row>
                             </Col>
 
-                            <Col xs={24} sm={8}>
+                                <Col xs={{span: 20, order: 1}} sm={{span: 8, order: 0}}>
+                                    <Row type="flex" justify="center">
+                                        <Progress
+                                            percent={this.state.totalPercent}
+                                            successPercent={this.state.rightPercent}
+                                            size="small"
+                                            strokeColor="red"
+                                            showInfo={false}
+                                        />
+                                    </Row>
+                                </Col>
+
+
+                            <Col xs={{span: 24, order: 0}} sm={{span: 8, order: 0}}>
                                 <Row type="flex" justify="center">
                                     <VerticleMarginOnStack>
-                                        <Button type="primary" onClick={this.checkPost}>Fake News</Button>
+                                        <Button type="primary" onClick={this.checkIfFake}>Fake News</Button>
                                     </VerticleMarginOnStack>
                                 </Row>
                             </Col>
+
                         </Row>
                     </Col>
                 </Row>
@@ -130,8 +216,6 @@ class CovfefeContainer extends Component {
                     <Button type="danger" onClick={this.openArticle} icon="book">Read Article</Button>
                 </Modal>
             </WhiteHouseBackground>
-
-
         )
     }
 }

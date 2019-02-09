@@ -22,6 +22,10 @@ export const VoterInfoBackground = styled.div`
    overflow-x: hidden!important;
 `;
 
+export const LastFlexOrder = styled.div`
+    
+`;
+
 export const TextHeader = styled.h1`
     font-size: 8vw;
     color: white;
@@ -64,9 +68,9 @@ export const ArticleContainer = styled.div`
    margin: 0 auto;
    border-radius: 25px;
    background-color: rgba(0, 0, 0, 0.6);
-   padding: 0 5vh;
    width: 80%;
    height; 100%;
+   padding: 0 5vh;
 `;
 
 export const BlueText = styled.span`
@@ -89,10 +93,12 @@ export const ArticleTitle = styled.h2`
     
     @media ${device.mobileS} { 
          font-size: 6vw;
+         margin: 0;
     }
     
     @media ${device.laptop} { 
          font-size: 3vw;
+         margin: 0 5vh;
     }
 `;
 
