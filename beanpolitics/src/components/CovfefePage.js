@@ -16,7 +16,7 @@ class CovfefePage extends Component {
     render() {
         if(!this.props.redditPost){
             return (
-                <CovfefeContainer>
+                <CovfefeContainer redditPostData={null}>
                     <Spin size="large"/>
                 </CovfefeContainer>
             )
@@ -24,7 +24,7 @@ class CovfefePage extends Component {
         const data = this.props.redditPost[0].data.children[0].data;
         console.log(data);
         return (
-            <CovfefeContainer>
+            <CovfefeContainer redditPostData={data}>
                 {data.title}
             </CovfefeContainer>
         )

@@ -17,7 +17,6 @@ export const WhiteHouseBackground = styled.div`
 export const TextHeader = styled.h1`
     font-size: 8vw;
     color: white;
-    font-family: Helvetica;
     margin: 0;
     text-align: center;
     
@@ -32,7 +31,6 @@ export const TextHeader = styled.h1`
 
 export const TextSubHeader = styled.h3`
     color: white;
-    font-family: Helvetica
     margin: 0;
     text-align: center;
     
@@ -57,7 +55,6 @@ export const ArticleTitle = styled.h2`
     text-align: center;
     margin: 0 5vh;
     color: white;
-    font-family: Helvetica
     
     @media ${device.mobileS} { 
          font-size: 6vw;
@@ -66,5 +63,10 @@ export const ArticleTitle = styled.h2`
     @media ${device.laptop} { 
          font-size: 3vw;
     }
-    
+`;
+
+export const VerticleMarginOnStack = styled.div`
+    @media ${device.mobileS} {
+        margin: 2.5vh 0;
+    }    
 `;
