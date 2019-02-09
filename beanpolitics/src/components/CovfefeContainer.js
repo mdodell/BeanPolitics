@@ -3,12 +3,12 @@ import React from 'react';
 import { Row, Col, Button } from 'antd';
 
 import './CovfefeContainer.css';
-import { TextHeader, TextSubHeader, TextHeaderAbsoluteContainer, ArticleTitle } from "./styled-components";
+import { TextHeader, TextSubHeader, ArticleTitle, WhiteHouseBackground } from "./styled-components";
 
 
 const CovfefeContainer = (props) => {
     return (
-        <div className="background-image">
+        <WhiteHouseBackground>
             <Row style={{minHeight: '100vh', flexDirection: 'column'}} type="flex" align="middle" justify="space-around">
                 <Col span={24}>
                     <TextHeader>Covfefe</TextHeader>
@@ -29,7 +29,7 @@ const CovfefeContainer = (props) => {
                 </Col>
             </Row>
 
-        </div>
+        </WhiteHouseBackground>
 
     )
 };

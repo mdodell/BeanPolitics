@@ -1,6 +1,18 @@
 import styled from 'styled-components';
 
-import {device} from './device';
+import { device } from './device';
+
+import whiteHouse from '../../images/whiteHouse.jpg';
+
+export const WhiteHouseBackground = styled.div`
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${whiteHouse}) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+    overflow-x: hidden!important;
+`;
 
 export const TextHeader = styled.h1`
     font-size: 8vw;
