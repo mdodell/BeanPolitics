@@ -1,0 +1,223 @@
+.Title{
+    text-align: center;
+    margin: 0;
+    height: auto;
+    width: auto;
+    position: relative;
+}
+.TitleMain{
+    color: #BF0A30;
+    font-weight: 400;
+    font-size: calc(40px + 1vw);
+    margin: 0;
+}
+.TitleSubText{
+    color: #b2ada5;
+    font-weight: 400;
+    font-size: calc(20px + 1vw);
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+}
+.MainMargins{
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+.trapezoid3 {
+    margin-top: 2vw;
+    display: block;
+    animation: trapShow1 3.5s ease;
+    position: relative;
+    margin-left: calc(-250px + 3vw); /**-17vw*/
+    border-color: #002868 transparent transparent transparent;
+    border-width: 100px 70px 70px 0;
+    height: 0;
+    width: 500px;
+    border-style: solid;
+    filter: drop-shadow(5px 8px 8px);
+
+}
+.trapezoid4 {
+    display: block;
+    position: absolute;
+    margin-left: -40px; /**-17vw*/
+    margin-top: -90px;
+    border-color: #BF0A30 transparent transparent transparent;
+    border-width: 100px 70px 70px 0;
+    height: 0;
+    width: 500px;
+    border-style: solid;
+    filter: drop-shadow(2px 2px 2px);
+}
+.TrapLetters1{
+    margin-top: -90px;
+    margin-left: 55%;
+    font-size: 50px;
+    width: 100%;
+    color: white;
+}
+@keyframes trapShow1 {
+    0% {
+        margin-left: -600vw;
+    }
+    100% {
+        margin-left: calc(-250px + 3vw);
+    }
+}
+.wave{
+    height: 50px;
+    position: relative;
+    width: 800vw;
+    left: -30vw;
+    margin-top: -50px;
+    animation: waveMoves 3.6s ease;
+}
+.wave::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 20px;
+    background-size: 40px 40px;
+    background-image:
+            radial-gradient(circle at 20px -10px, transparent 24px, #002868 26px);
+}
+.wave::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 30px;
+    background-size: 80px 40px;
+    background-image: radial-gradient(circle at 20px 30px, #002868 24px, transparent 26px);
+}
+.ContentContainer {
+    background-color: #002868;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-left: -2vw;
+
+}
+.ContentBox{
+    width: 50%;
+    max-width: 30em;
+    height: 60vw;
+}
+.InnerImageSpec1{
+    background: url("../images/USFlag.png");
+    background-size: 190%;
+    background-repeat: no-repeat;
+    background-position-x: 30%;
+}
+.InnerImageSpec2{
+    background: url("../images/TrumpImage.png");
+    background-size: 190%;
+    background-repeat: no-repeat;
+    background-position-x: 30%;
+}
+.InnerImageSpec3{
+    background: url("../images/matrixCode.jpg");
+    background-size: 200%;
+    background-repeat: repeat;
+    background-position-x: 30%;
+    animation: RollingBRound 5s linear infinite;
+}
+@keyframes RollingBRound {
+    0%{
+        background-position-x: 100%;
+    }
+    100%{
+        background-position-x: -100%;
+    }
+}
+.InnerImage{
+    width: 30vw;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    diplay: block;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0 6px 12px;
+    overflow: hidden;
+}
+.InnerImage:hover{
+    box-shadow: 0 12px 30px;
+    animation: jiggle 0.4s ease;
+}
+.InnerTitleTxt{
+    background-color: rgba(34, 34, 35, 0.73);
+    color: #dfdfdf;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column;
+    animation: dropdowns 1.5s ease;
+}
+.InnerDes{
+    padding: 0;
+    height: auto;
+    width: 100%;
+}
+.InnerDes p{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #eeeeee;
+}
+@keyframes dropdowns {
+    0% {
+        margin-top: -30vw;
+    }
+    100% {
+        margin-top: 0vw;
+    }
+}
+@keyframes jiggle {
+    0% {
+        transform: translate(0, 0);
+    }
+    33% {
+        transform: translate(1%, 0);
+    }
+    66% {
+        transform: translate(-1%, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+
+}
+@keyframes waveMoves {
+    0% {
+        margin-left: -200vw;
+    }
+    100% {
+        margin-left: 0vw;
+    }
+}
+.BackgroundMain{
+    position: absolute;
+    z-index: -1;
+    margin-left: -10%;
+}
+.BackgroundImage{
+    height: 40%;
+    width: 110vw;
+    margin-top: -10%;
+}
+body{
+    overflow-x: hidden;
+}
