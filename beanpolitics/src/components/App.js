@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Redirect, BrowserRouter as Router } from 'react-router-dom';
 
-import Covfefe from './Covfefe';
+import Covfefe from './CovfefePage';
 import VoterInfo from './VoterInfo';
 import Dashboard from './Dashboard';
 
