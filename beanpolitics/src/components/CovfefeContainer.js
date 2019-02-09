@@ -2,12 +2,22 @@ import React, { Component } from 'react';
 
 import { Row, Col, Button, Modal, Card } from 'antd';
 
-import { TextHeader, TextSubHeader, ArticleTitle, WhiteHouseBackground, VerticleMarginOnStack } from "./styled-components";
+import {
+    TextHeader,
+    TextSubHeader,
+    ArticleTitle,
+    WhiteHouseBackground,
+    VerticleMarginOnStack,
+    RedditImageDisplay,
+    Image,
+    RedText,
+    WhiteText,
+    BlueText,
+    ArticleContainer
+} from "./styled-components";
 
 import { connect } from 'react-redux';
 import {getRandomRedditPost} from "../actions";
-
-const{ Meta } = Card;
 
 class CovfefeContainer extends Component {
     constructor(props){
@@ -35,17 +45,26 @@ class CovfefeContainer extends Component {
     };
 
     postTitle = () => {
-        if(!this.props.redditPostData){
+        const data = this.props.redditPostData;
+        if(!data){
             return '';
         }
-        return this.props.redditPost[0].data.children[0].data.title;
+        return data.title;
     };
 
     postThumbnail = () => {
-        if(!this.props.redditPostData) {
+        const data = this.props.redditPostData;
+        if(!data) {
             return '';
         }
-        return this.props.redditPost[0].data.children[0].data.thumbnail;
+        return data.preview.images[0].source.url.replace("amp;", "");
+    };
+
+    openArticle = () => {
+        const data = this.props.redditPostData;
+        if(data) {
+            window.open(data.url);
+        }
     };
 
     handleCancel = (e) => {
@@ -60,14 +79,20 @@ class CovfefeContainer extends Component {
             <WhiteHouseBackground>
                 <Row style={{minHeight: '100vh', flexDirection: 'column'}} type="flex" align="middle" justify="space-around">
                     <Col span={24}>
-                        <TextHeader>Covfefe</TextHeader>
+                        <TextHeader>
+                            <WhiteText>Covfefe</WhiteText>
+                            <RedText>.</RedText>
+                            <BlueText>io</BlueText>
+                        </TextHeader>
                         <TextSubHeader>The Fake News Game</TextSubHeader>
                     </Col>
 
                     <Col span={24}>
-                        <ArticleTitle>
-                            {this.props.children}
-                        </ArticleTitle>
+                        <ArticleContainer>
+                            <ArticleTitle>
+                                {this.props.children}
+                            </ArticleTitle>
+                        </ArticleContainer>
                     </Col>
 
                     <Col span={24}>
@@ -91,13 +116,18 @@ class CovfefeContainer extends Component {
                     </Col>
                 </Row>
 
-                <Modal style={{backgroundColor: 'green'}}
+                <Modal
+                    centered
                     visible={this.state.visible}
                     onOk={this.handleOk}
                     onCancel={this.handleCancel}
+                    okText="Next Post"
                 >
-                    <img style={{width: '100%', marginTop: '3vh', height: '35vh'}}alt="example" src={this.postThumbnail()} />
+                    <RedditImageDisplay>
+                        <Image src={this.postThumbnail()} />
+                    </RedditImageDisplay>
                     <h1>{this.postTitle()}</h1>
+                    <Button type="danger" onClick={this.openArticle} icon="book">Read Article</Button>
                 </Modal>
             </WhiteHouseBackground>
 

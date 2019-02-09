@@ -29,7 +29,7 @@ export const TextHeader = styled.h1`
     }
 `;
 
-export const TextSubHeader = styled.h3`
+export const TextSubHeader = styled.h5`
     color: white;
     margin: 0;
     text-align: center;
@@ -45,10 +45,27 @@ export const TextSubHeader = styled.h3`
     @media ${device.laptop} { 
          font-size: 4vw;
     }
-    
-    @media ${device.laptopL} { 
-         font-size: 4vw;
-    }
+`;
+
+export const ArticleContainer = styled.div`
+   margin: 0 auto;
+   border-radius: 25px;
+   background-color: rgba(0, 0, 0, 0.6);
+   padding: 0 5vh;
+   width: 80%;
+   height; 100%;
+`;
+
+export const BlueText = styled.span`
+    color: blue;
+`;
+
+export const RedText = styled.span`
+    color: red;
+`;
+
+export const WhiteText = styled.span`
+    color: white;
 `;
 
 export const ArticleTitle = styled.h2`
@@ -63,6 +80,19 @@ export const ArticleTitle = styled.h2`
     @media ${device.laptop} { 
          font-size: 3vw;
     }
+`;
+
+export const RedditImageDisplay = styled.div`
+    width: 100%;
+    margin-top: 3vh;
+    height: 35vh;
+    border: 2px solid black;
+    background-position: bottom center
+`;
+
+export const Image = styled.img`
+    width: 100%;
+    height: 100%;
 `;
 
 export const VerticleMarginOnStack = styled.div`
