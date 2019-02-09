@@ -1,0 +1,56 @@
+.Title{
+    background-color: #76ebff;
+    text-align: center;
+    margin: 0;
+    height: auto;
+    width: auto;
+    position: relative;
+}
+.TitleMain{
+    color: green;
+    font-weight: 400;
+    font-size: calc(40px + 1vw);
+    margin: 0;
+}
+.TitleSubText{
+    color: #b2ada5;
+    font-weight: 400;
+    font-size: calc(20px + 1vw);
+    margin-top: 1vw;
+}
+.MainMargins{
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+.trapezoid3 {
+    display: block;
+    animation: trapShow4 3.5s ease;
+    position: relative;
+    margin-left: calc(-250px + 3vw);; /**-17vw*/
+    border-color: #002868 transparent transparent transparent;
+    border-width: 100px 70px 70px 0;
+    height: 0;
+    width: 500px;
+    border-style: solid;
+    filter: drop-shadow(5px 8px 8px);
+
+}
+.trapezoid4 {
+    display: block;
+    position: absolute;
+    margin-left: -40px; /**-17vw*/
+    margin-top: -90px;
+    border-color: #BF0A30 transparent transparent transparent;
+    border-width: 100px 70px 70px 0;
+    height: 0;
+    width: 500px;
+    border-style: solid;
+    filter: drop-shadow(2px 2px 2px);
+}
+.TrapLetters1{
+    margin-top: -90px;
+    margin-left: 55%;
+    font-size: 50px;
+    width: 100%;
+    color: white;
+}
