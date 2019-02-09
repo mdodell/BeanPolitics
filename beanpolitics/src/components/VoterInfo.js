@@ -2,12 +2,66 @@ import React, { Component } from 'react';
 import {connect} from "react-redux";
 import {getVoterInfo} from "../actions";
 import Autocomplete from 'react-google-autocomplete';
-import { Table, Empty, Row, Button, Divider, Tag } from 'antd';
+import { Icon, Card} from 'antd';
+import { TextSubHeader, ArticleTitle, VoterInfoBackground } from "./styled-components";
+const { Meta} = Card;
 
 
 class VoterInfo extends Component {
 
-  infoOutput(){
+
+    getCover(index){
+        if (this.props.output.officials[index].photoUrl === undefined || this.props.output.officials[index].photoUrl === ""){
+            return "";
+        }
+        else {
+            return this.props.output.officials[index].photoUrl;
+        }
+
+    }
+
+    getPhone(index) {
+        return "tel:" + this.props.output.officials[index].phones;
+    }
+
+    getGoogleMaps(index) {
+        return "https://www.google.com/maps/place/" + (this.props.output.officials[index].address ? (this.props.output.officials[index].address[0].line1 ? this.props.output.officials[index].address[0].line1 + " " : "") + (this.props.output.officials[index].address[0].line2 ? this.props.output.officials[index].address[0].line2 + " " : "") + (this.props.output.officials[index].address[0].city ? this.props.output.officials[index].address[0].city + " " : "") + (this.props.output.officials[index].address[0].state ? this.props.output.officials[index].address[0].state + " " : "") + (this.props.output.officials[index].address[0].zip ? this.props.output.officials[index].address[0].zip + " " : "") : "")
+    }
+
+
+    getChannels(index) {
+        if (this.props.output.officials[index]) {
+            if (this.props.output.officials[index].channels) {
+                console.log(this.props.output.officials[index].channels);
+                const output = <span>{this.props.output.officials[index].channels.map((channel, ind) => {
+                    if (channel.type === "YouTube") {
+                        const link = "http://youtube.com/user/" + channel.id;
+                        return <span><i className="fab fa-youtube"></i>&nbsp;YouTube: <a href={link}>{channel.id}</a><br/></span>
+                    }
+                    else if (channel.type === "Twitter") {
+                        const link = "http://twitter.com/" + channel.id;
+                        return <span><i className="fab fa-twitter-square"></i>&nbsp;Twitter: <a href={link}>{channel.id}</a><br/></span>
+                    }
+
+                    else if (channel.type === "Facebook") {
+                        const link = "http://facebook.com/" + channel.id;
+                        return <span><i className="fab fa-facebook-square"></i>&nbsp;Facebook: <a href={link}>{channel.id}</a><br/></span>
+                    }
+                })}</span>;
+                return output;
+            }
+        }
+    }
+
+
+    getDescription(index){
+        return <div><span>{this.props.output.officials[index].office}</span><br/>
+        <span>{this.props.output.officials[index].party}</span><br/>
+        <span>{this.getChannels(index)}</span><br/>
+        </div>
+    }
+
+    infoOutput(){
       if(this.props.output.offices) {
           for(let i = 0; i < this.props.output.offices.length; i++) {
               for(let x = 0; x < this.props.output.offices[i].officialIndices.length; x++) {
@@ -15,51 +69,26 @@ class VoterInfo extends Component {
               }
           }
       }
-      const columns = [{
-          title: 'Photo',
-          dataIndex: 'photoUrl',
-          key: 'photoUrl',
-          render: photo =>
-              (
-                  <span>{
-                      (photo !== "" ? <img src={photo} width={100}></img> : "")} </span>
-              ),
-      },  {
-          title: 'Name',
-          dataIndex: 'name',
-          key: 'name',
-      },  {
-          title: 'Office',
-          dataIndex: 'office',
-          key: 'office',
-      },  {
-          title: 'Party',
-          dataIndex: 'party',
-          key: 'party',
-      },  {
-          title: 'URL',
-          dataIndex: 'urls',
-          key: 'urls',
-      },  {
-          title: 'Address',
-          dataIndex: 'address',
-          key: 'address',
-          render: addresses =>
-              (
-              <span>{(addresses ? (addresses[0].line1 ? addresses[0].line1 + " " : "") + (addresses[0].line2 ? addresses[0].line2 + " " : "") + (addresses[0].city ? addresses[0].city + " " : "") + (addresses[0].state ? addresses[0].state + " " : "") + (addresses[0].zip ? addresses[0].zip + " " : "") : "")} </span>
-          ),
-      }];
       if (this.props.output.officials){
-          return <Table columns={columns} dataSource={this.props.output.officials} />;
+          return <div>
+              {this.props.output.officials.map((official, index) => (
+                  <Card style={{width: '25%', textAlign: 'center'}} cover={<img alt="" src={this.getCover(index)} />} actions={[<a href={official.urls}><Icon type="link" /></a>, <a href={this.getPhone(index)}><Icon type="phone" /></a>,<a href={this.getGoogleMaps(index)}><Icon type="compass"/></a>]}><Meta
+                  title={official.name}
+                  description={this.getDescription(index)}
+              />
+                  </Card>
+          ))}
+          </div>;
       }
       else {
-          return <span style={{textAlign: 'center'}}><br/><h1><i class="fas fa-person-booth fa-5x"></i></h1><h2>Type your address in above to get information about all of your local representatives!</h2></span>;
+          return <span style={{textAlign: 'center'}}><br/><br/><ArticleTitle><i class="fas fa-person-booth fa-5x"></i></ArticleTitle><ArticleTitle>Type in your address above to get information about all of your local representatives!</ArticleTitle></span>;
       }
   }
 
   render() {
       return <div className="VoterInfo">
-          <h1 style={{textAlign: 'center'}}><i class="fas fa-flag-usa"></i>&nbsp;BeanPolitics</h1><h2 style={{textAlign: 'center'}}><i class="fas fa-vote-yea"></i>&nbsp;Civic Information Hub</h2>
+          <VoterInfoBackground>
+              <TextSubHeader><i class="fas fa-flag-usa"></i>&nbsp;BeanPolitics</TextSubHeader><ArticleTitle><i class="fas fa-vote-yea"></i>&nbsp;Civic Information Hub</ArticleTitle>
               <Autocomplete
               style={{width: '100%'}}
               onPlaceSelected={(place) => {
@@ -73,7 +102,8 @@ class VoterInfo extends Component {
               types={[]}
               componentRestrictions={{country: "us"}}
           />
-          <p>{this.infoOutput()}</p>
+          {this.infoOutput()}
+          </VoterInfoBackground>
       </div>;
   }
 }

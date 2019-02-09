@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { device } from './device';
 
 import whiteHouse from '../../images/whiteHouse.jpg';
+import pattern from '../../images/pattern.png';
 
 export const WhiteHouseBackground = styled.div`
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${whiteHouse}) no-repeat center center fixed;
@@ -14,9 +15,17 @@ export const WhiteHouseBackground = styled.div`
     overflow-x: hidden!important;
 `;
 
+export const VoterInfoBackground = styled.div`
+   background-image: url(${pattern});
+   background-color: #194ae0;
+   min-height: 100vh;
+   overflow-x: hidden!important;
+`;
+
 export const TextHeader = styled.h1`
     font-size: 8vw;
     color: white;
+    font-family: Segoe UI;
     margin: 0;
     text-align: center;
     
@@ -31,6 +40,7 @@ export const TextHeader = styled.h1`
 
 export const TextSubHeader = styled.h5`
     color: white;
+    font-family: Segoe UI;
     margin: 0;
     text-align: center;
     
@@ -43,6 +53,9 @@ export const TextSubHeader = styled.h5`
     }
     
     @media ${device.laptop} { 
+         font-size: 4vw;
+    }
+    @media ${device.laptopL} { 
          font-size: 4vw;
     }
 `;
@@ -72,6 +85,7 @@ export const ArticleTitle = styled.h2`
     text-align: center;
     margin: 0 5vh;
     color: white;
+    font-family: Segoe UI;
     
     @media ${device.mobileS} { 
          font-size: 6vw;
