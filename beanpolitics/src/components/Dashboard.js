@@ -9,7 +9,7 @@ class Dashboard extends Component {
            <body>
            <div className="Title">
                <p className="TitleMain">Bean Politics</p>
-               <p1 className="TitleSubText">sub header</p1>
+               <p1 className="TitleSubText"><i>sub header</i></p1>
            </div>
            <main className="MainMargins">
                <div className="trapezoid3">

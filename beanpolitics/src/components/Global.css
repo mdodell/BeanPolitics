@@ -1,5 +1,4 @@
 .Title{
-    background-color: #76ebff;
     text-align: center;
     margin: 0;
     height: auto;
@@ -7,7 +6,7 @@
     position: relative;
 }
 .TitleMain{
-    color: green;
+    color: #25b0ff;
     font-weight: 400;
     font-size: calc(40px + 1vw);
     margin: 0;
@@ -17,16 +16,18 @@
     font-weight: 400;
     font-size: calc(20px + 1vw);
     margin-top: 1vw;
+    margin-bottom: 2vw;
 }
 .MainMargins{
     padding-left: 4vw;
     padding-right: 4vw;
 }
 .trapezoid3 {
+    margin-top: 2vw;
     display: block;
-    animation: trapShow4 3.5s ease;
+    animation: trapShow1 3.5s ease;
     position: relative;
-    margin-left: calc(-250px + 3vw);; /**-17vw*/
+    margin-left: calc(-250px + 3vw); /**-17vw*/
     border-color: #002868 transparent transparent transparent;
     border-width: 100px 70px 70px 0;
     height: 0;
@@ -53,4 +54,12 @@
     font-size: 50px;
     width: 100%;
     color: white;
+}
+@keyframes trapShow1 {
+    0% {
+        margin-left: -600vw;
+    }
+    100% {
+        margin-left: calc(-250px + 3vw);
+    }
 }
