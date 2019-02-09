@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30f81f5a-4e73-40e9-a932-d0b8fa5b13a3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/beanpolitics/src/components/Covfefe.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beanpolitics/src/components/VoterInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/beanpolitics/src/components/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beanpolitics/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/beanpolitics/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beanpolitics/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/beanpolitics/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beanpolitics/src/components/App/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/beanpolitics/src/components/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beanpolitics/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/beanpolitics/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beanpolitics/src/components/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/beanpolitics/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/beanpolitics/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beanpolitics/src/components/Covfefe.js" beforeDir="false" afterPath="$PROJECT_DIR$/beanpolitics/src/components/Covfefe.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beanpolitics/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/beanpolitics/src/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,26 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beanpolitics/src/index.js">
+      <file leaf-file-name="LICENSE" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LICENSE">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/beanpolitics/src/components/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="18" column="37" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -49,17 +34,56 @@
       <file leaf-file-name="Covfefe.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/beanpolitics/src/components/Covfefe.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VoterInfo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beanpolitics/src/components/VoterInfo.js">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/beanpolitics/src/components/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dashboard.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/beanpolitics/src/components/Dashboard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/beanpolitics/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="41" selection-end-line="10" />
+              <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/beanpolitics/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config-overrides.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/beanpolitics/config-overrides.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -82,9 +106,10 @@
         <option value="$PROJECT_DIR$/beanpolitics/pages/apps/home/components/Dashboard.js" />
         <option value="$PROJECT_DIR$/beanpolitics/pages/voterInfo.js" />
         <option value="$PROJECT_DIR$/beanpolitics/pages/apps/home/components/VoterInfo.js" />
-        <option value="$PROJECT_DIR$/beanpolitics/src/index.js" />
         <option value="$PROJECT_DIR$/beanpolitics/src/components/VoterInfo.js" />
         <option value="$PROJECT_DIR$/beanpolitics/src/components/Covfefe.js" />
+        <option value="$PROJECT_DIR$/beanpolitics/src/components/Dashboard.js" />
+        <option value="$PROJECT_DIR$/beanpolitics/src/index.js" />
         <option value="$PROJECT_DIR$/beanpolitics/src/components/App.js" />
       </list>
     </option>
@@ -104,9 +129,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="22" />
+    <option name="x" value="13" />
+    <option name="y" value="38" />
     <option name="width" value="1440" />
-    <option name="height" value="833" />
+    <option name="height" value="832" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -130,12 +156,6 @@
               <item name="BeanPolitics" type="b2602c69:ProjectViewProjectNode" />
               <item name="BeanPolitics" type="462c0819:PsiDirectoryNode" />
               <item name="beanpolitics" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BeanPolitics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BeanPolitics" type="462c0819:PsiDirectoryNode" />
-              <item name="beanpolitics" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -151,11 +171,16 @@
       </pane>
     </panes>
   </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/beanpolitics/src/components" />
+      <recent name="$PROJECT_DIR$/beanpolitics/src/components/Covfefe" />
       <recent name="C:\Users\Owner\Documents\GitHub\BeanPolitics\beanpolitics\src\components" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Owner\Documents\GitHub\BeanPolitics\beanpolitics\src\components" />
     </key>
   </component>
@@ -186,61 +211,119 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1745000" />
+    <option name="totallyTimeSpent" value="3476000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1721" height="935" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="832" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25296912" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.5023753" side_tool="true" visible="true" weight="0.32919255" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" weight="0.3292517" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.4976247" visible="true" weight="0.32919255" />
-      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3292517" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25296912" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/beanpolitics/pages/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/beanpolitics/pages/apps/home/components/Dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="90">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beanpolitics/pages/apps/home/components/VoterInfo.js">
+    <entry file="file://$PROJECT_DIR$/beanpolitics/pages/apps/home/components/Dashboard.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beanpolitics/pages/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beanpolitics/.babelrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beanpolitics/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beanpolitics/config-overrides.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beanpolitics/src/index.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/beanpolitics/pages/representatives.js">
+    <entry file="file://$PROJECT_DIR$/beanpolitics/src/components/App/App.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/beanpolitics/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beanpolitics/src/components/App/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beanpolitics/pages/index.js" />
+    <entry file="file://$PROJECT_DIR$/beanpolitics/pages/apps/home/components/Dashboard.js" />
+    <entry file="file://$PROJECT_DIR$/beanpolitics/pages/apps/home/components/VoterInfo.js" />
+    <entry file="file://$PROJECT_DIR$/beanpolitics/pages/representatives.js" />
     <entry file="file://$PROJECT_DIR$/beanpolitics/src/components/VoterInfo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -250,25 +333,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/beanpolitics/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beanpolitics/src/components/Dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/beanpolitics/src/components/Covfefe.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/beanpolitics/src/components/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="225">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
