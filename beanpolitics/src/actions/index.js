@@ -13,7 +13,7 @@ export const getVoterInfo = (address) => async dispatch => {
         params: {
             address: address,
             includeOffices: true,
-            key: "AIzaSyAxNpnvWtCqOjBP54d6_IO1_R1VQiLstEY"
+            key: "YOUR_API_KEY"
         }
     });
 
