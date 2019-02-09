@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from 'antd';
-import { Route, Link, Redirect, BrowserRouter as Router } from 'react-router-dom';
-
+import { Route, Redirect, BrowserRouter as Router } from 'react-router-dom';
 
 import Covfefe from './Covfefe';
 import VoterInfo from './VoterInfo';
