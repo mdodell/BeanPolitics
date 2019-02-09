@@ -212,3 +212,6 @@
     width: 110vw;
     margin-top: -10%;
 }
+body{
+    overflow-x: hidden;
+}
