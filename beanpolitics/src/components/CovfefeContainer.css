@@ -5,4 +5,5 @@
     -o-background-size: cover;
     background-size: cover;
     min-height: 100vh;
+    overflow-x: hidden!important;
 }

@@ -1,26 +1,33 @@
 import React from 'react';
 
-import { Row } from 'antd';
+import { Row, Col, Button } from 'antd';
 
 import './CovfefeContainer.css';
-import { Header, SubHeader, HeaderAbsoluteContainer, ArticleTitle } from "./styledComponents";
+import { TextHeader, TextSubHeader, TextHeaderAbsoluteContainer, ArticleTitle } from "./styled-components";
+
 
 const CovfefeContainer = (props) => {
     return (
         <div className="background-image">
-            <HeaderAbsoluteContainer>
-                <Header>Covfefe</Header>
-                <SubHeader>The Fake News Game</SubHeader>
-            </HeaderAbsoluteContainer>
+            <Row style={{minHeight: '100vh', flexDirection: 'column'}} type="flex" align="middle" justify="space-around">
+                <Col span={24}>
+                    <TextHeader>Covfefe</TextHeader>
+                    <TextSubHeader>The Fake News Game</TextSubHeader>
+                </Col>
 
+                <Col span={24}>
+                    <ArticleTitle>
+                        {props.children}
+                    </ArticleTitle>
+                </Col>
 
-            <Row style={{minHeight: '100vh'}}type="flex" align="middle" justify="center">
-                <ArticleTitle>
-                    {props.children}
-                 </ArticleTitle>
+                <Col span={24}>
+                    <Row type="flex" justify="space-around">
+                        <Button type="primary">Real News</Button>
+                        <Button type="danger">Fake News</Button>
+                    </Row>
+                </Col>
             </Row>
-
-
 
         </div>
 
