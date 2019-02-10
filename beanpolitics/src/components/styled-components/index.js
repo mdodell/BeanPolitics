@@ -22,10 +22,6 @@ export const VoterInfoBackground = styled.div`
    overflow-x: hidden!important;
 `;
 
-export const LastFlexOrder = styled.div`
-    
-`;
-
 export const TextHeader = styled.h1`
     font-size: 8vw;
     color: white;
@@ -57,9 +53,6 @@ export const TextSubHeader = styled.h5`
     }
     
     @media ${device.laptop} { 
-         font-size: 4vw;
-    }
-    @media ${device.laptopL} { 
          font-size: 4vw;
     }
 `;
