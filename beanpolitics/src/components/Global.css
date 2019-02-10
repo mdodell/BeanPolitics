@@ -6,15 +6,20 @@
     position: relative;
 }
 .TitleMain{
-    color: #BF0A30;
-    font-weight: 400;
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
     font-size: calc(40px + 1vw);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black,2px 2px red,3px 3px white,4px 4px blue;
     margin: 0;
+    margin-top: 4%;
 }
 .TitleSubText{
-    color: #b2ada5;
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
     font-size: calc(20px + 1vw);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black,2px 2px red,3px 3px white,4px 4px blue;
     margin-top: 1vw;
     margin-bottom: 2vw;
 }
@@ -51,9 +56,11 @@
 .TrapLetters1{
     margin-top: -90px;
     margin-left: 55%;
-    font-size: 50px;
+    font-size: 30px;
     width: 100%;
     color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
 }
 @keyframes trapShow1 {
     0% {
@@ -213,12 +220,34 @@
     position: absolute;
     z-index: -1;
     margin-left: -10%;
+    margin-top: -20%;
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
 }
 .BackgroundImage{
     height: 40%;
     width: 110vw;
     margin-top: -10%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+    overflow-x: hidden!important;
 }
 body{
+    overflow: scroll;
     overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+.emphasis{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
 }
