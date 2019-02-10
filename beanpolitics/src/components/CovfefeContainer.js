@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Row, Col, Button, Modal, Progress } from 'antd';
+import { Row, Col, Button, Modal, Progress, Tooltip } from 'antd';
 
 import {
     TextHeader,
@@ -13,8 +13,7 @@ import {
     RedText,
     WhiteText,
     BlueText,
-    ArticleContainer,
-    LastFlexOrder
+    ArticleContainer
 } from "./styled-components";
 
 import { connect } from 'react-redux';
@@ -179,13 +178,16 @@ class CovfefeContainer extends Component {
 
                                 <Col xs={{span: 20, order: 1}} sm={{span: 8, order: 0}}>
                                     <Row type="flex" justify="center">
-                                        <Progress
-                                            percent={this.state.totalPercent}
-                                            successPercent={this.state.rightPercent}
-                                            size="small"
-                                            strokeColor="red"
-                                            showInfo={false}
-                                        />
+                                        <Tooltip title={`${this.state.rightCount}/${this.state.totalCount}`}>
+                                            <Progress
+                                                style={{cursor: 'pointer'}}
+                                                percent={this.state.totalPercent}
+                                                successPercent={this.state.rightPercent}
+                                                size="small"
+                                                strokeColor="red"
+                                                showInfo={false}
+                                            />
+                                        </Tooltip>
                                     </Row>
                                 </Col>
 
