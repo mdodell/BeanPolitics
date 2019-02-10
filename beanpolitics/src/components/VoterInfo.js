@@ -2,19 +2,33 @@ import React, { Component } from 'react';
 import {connect} from "react-redux";
 import {getVoterInfo} from "../actions";
 import Autocomplete from 'react-google-autocomplete';
-import { Icon, Card} from 'antd';
+import { Tabs, Icon, Card} from 'antd';
 import { TextSubHeader, ArticleTitle, VoterInfoBackground } from "./styled-components";
 import placeholder from '../images/placeholder.png';
 const { Meta} = Card;
 
 
+function callback(key) {
+    console.log(key);
+}
+
 class VoterInfo extends Component {
 
 
+    getStateData(){
+        console.log(this.props.output.normalizedInput);
+        if(this.props.output.normalizedInput){
+            const image = "../" + this.props.output.normalizedInput.state + ".jpg";
+            const label = "2016 Election Results in " + this.props.output.normalizedInput.state;
+            return <div style={{textAlign: 'center'}}><ArticleTitle>{label}</ArticleTitle><br/><img alt={label} src={image}/></div>
+        }
+        else{
+            return <div></div>
+        }
+    }
+
     getCover(index){
         if (this.props.output.officials[index].photoUrl === undefined || this.props.output.officials[index].photoUrl === "" || this.props.output.officials[index].photoUrl === ("http://www.mass.gov/governor/images/governor-charlie-baker-300x450.jpg") || this.props.output.officials[index].photoUrl === ("http://www.mass.gov/governor/images/ltgovernor-karyn-polito-300x450-.jpg")){
-            console.log("error:");
-            console.log(this.props.output.officials[index].photoUrl);
             return placeholder;
         }
         else {
@@ -67,6 +81,7 @@ class VoterInfo extends Component {
     }
 
     infoOutput(){
+        const TabPane = Tabs.TabPane;
         if(this.props.output.offices) {
             for(let i = 0; i < this.props.output.offices.length; i++) {
                 for(let x = 0; x < this.props.output.offices[i].officialIndices.length; x++) {
@@ -75,7 +90,9 @@ class VoterInfo extends Component {
             }
         }
         if (this.props.output.officials){
-            return <div style={{display: 'flex', flexWrap: 'wrap', WebkitFlexWrap: 'wrap'}}><br/>
+            return <span style={{textAlign: 'center'}}><Tabs defaultActiveKey="1" onChange={callback}>
+                <TabPane tab={<span style={{color: 'white'}}>Representatives</span>} key="1"><ArticleTitle>Your Elected Officials</ArticleTitle><br/>
+                    <div style={{display: 'flex', flexWrap: 'wrap', WebkitFlexWrap: 'wrap'}}><br/>
                 {this.props.output.officials.map((official, index) => (
                     <Card style={{width: '50%', textAlign: 'center', display: 'block'}} cover={<img alt="" src={this.getCover(index)} style={{width: '50%', marginLeft: 'auto', marginRight: 'auto'}}/>} actions={[<a href={official.urls}><Icon type="link" /></a>, <a href={this.getPhone(index)}><Icon type="phone" /></a>,<a href={this.getGoogleMaps(index)}><Icon type="compass"/></a>]}><Meta
                         title={official.name}
@@ -83,17 +100,18 @@ class VoterInfo extends Component {
                     />
                     </Card>
                 ))}
-            </div>;
+                    </div></TabPane><TabPane tab={<span style={{color: 'white'}}>2016 Election Results</span>} key="2">{this.getStateData()}</TabPane>
+            </Tabs></span>;
         }
         else {
-            return <span style={{textAlign: 'center'}}><br/><br/><ArticleTitle><i className="fas fa-person-booth fa-5x"></i></ArticleTitle><ArticleTitle>Type in your address above to get information about all of your local representatives!</ArticleTitle></span>;
+            return <span style={{textAlign: 'center'}}><br/><br/><ArticleTitle><i className="fas fa-person-booth fa-5x"></i></ArticleTitle><ArticleTitle>Type in your address above to get information about all of your local representatives as well as your state's 2016 election visualization!</ArticleTitle></span>;
         }
     }
 
     render() {
         return <div className="VoterInfo">
             <VoterInfoBackground>
-                <TextSubHeader><i className="fas fa-flag-usa"></i>&nbsp;BeanPolitics</TextSubHeader><ArticleTitle><i className="fas fa-vote-yea"></i>&nbsp;Civic Information Hub</ArticleTitle>
+                <TextSubHeader><i className="fas fa-flag-usa"></i>&nbsp;BeanPolitics</TextSubHeader><ArticleTitle><i className="fas fa-vote-yea"></i>&nbsp;Civic Information Hub & Data Archive</ArticleTitle>
                 <div style={{textAlign: 'center'}}>
                     <br/>
                     <Autocomplete

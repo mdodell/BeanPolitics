@@ -52,7 +52,7 @@ class Dashboard extends Component {
                    </div>
                </div>
                <div className="ContentBox">
-                   <div className="InnerImage InnerImageSpec3">
+                   <div className="InnerImage InnerImageSpec3" onClick={function(){window.location.href='/voterInfo'}}>
                        <div className="InnerTitleTxt">
                            <h1 className="emphasis">Data Archive</h1>
                        </div>
