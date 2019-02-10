@@ -17,6 +17,9 @@ import {
 } from "./styled-components";
 
 import { connect } from 'react-redux';
+import Sound from 'react-sound';
+import fakeNewsSound from '../sounds/fakeNews.wav';
+
 import {getRandomRedditPost} from "../actions";
 
 class CovfefeContainer extends Component {
@@ -28,11 +31,15 @@ class CovfefeContainer extends Component {
             rightCount: 0,
             wrongCount: 0,
             totalPercent: 0,
-            rightPercent: 0
+            rightPercent: 0,
+            playStatus: Sound.status.STOPPED
         }
     }
 
     checkIfReal = () => {
+        if(!this.props.redditPostData){
+            return ''
+        }
         let answer = this.props.redditPostData.subreddit === 'nottheonion' ? true : false;
         if(answer){
             this.increaseRight();
@@ -71,6 +78,9 @@ class CovfefeContainer extends Component {
     };
 
     checkIfFake = () => {
+        if(!this.props.redditPostData){
+            return ''
+        }
         let answer = this.props.redditPostData.subreddit === 'TheOnion' ? true : false;
         if(answer){
             this.increaseRight();
@@ -79,6 +89,7 @@ class CovfefeContainer extends Component {
         }
         this.increaseTotal();
         this.showModal();
+        this.setState({playStatus: Sound.status.PLAYING});
         return answer;
     };
 
@@ -210,7 +221,9 @@ class CovfefeContainer extends Component {
                             <Col xs={{span: 24, order: 0}} sm={{span: 8, order: 0}}>
                                 <Row type="flex" justify="center">
                                     <VerticleMarginOnStack>
-                                        <Button type="primary" onClick={this.checkIfFake}>Fake News</Button>
+                                        <Button type="primary" onClick={this.checkIfFake}>
+                                            Fake News
+                                        </Button>
                                     </VerticleMarginOnStack>
                                 </Row>
                             </Col>
@@ -218,7 +231,12 @@ class CovfefeContainer extends Component {
                         </Row>
                     </Col>
                 </Row>
-
+                <Sound
+                    volume={100}
+                    url={fakeNewsSound}
+                    playStatus={this.state.playStatus}
+                    onFinishedPlaying={() => this.setState({ playStatus: Sound.status.STOPPED })}
+                ></Sound>
                 <Modal
                     centered
                     visible={this.state.visible}
