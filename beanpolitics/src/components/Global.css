@@ -104,7 +104,6 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-left: -2vw;
 
 }
 .ContentBox{
@@ -117,12 +116,13 @@
     background-size: 190%;
     background-repeat: no-repeat;
     background-position-x: 30%;
+    cursor: pointer;
 }
 .InnerImageSpec2{
     background: url("../images/TrumpImage.png");
-    background-size: 190%;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position-x: 30%;
+    cursor: pointer;
 }
 .InnerImageSpec3{
     background: url("../images/matrixCode.jpg");
@@ -130,6 +130,7 @@
     background-repeat: repeat;
     background-position-x: 30%;
     animation: RollingBRound 5s linear infinite;
+    cursor: pointer;
 }
 @keyframes RollingBRound {
     0%{

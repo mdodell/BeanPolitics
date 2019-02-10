@@ -25,7 +25,7 @@ export const VoterInfoBackground = styled.div`
 export const TextHeader = styled.h1`
     font-size: 8vw;
     color: white;
-    font-family: Segoe UI;
+    font-family: 'Ubuntu', sans-serif;
     margin: 0;
     text-align: center;
     
@@ -40,7 +40,7 @@ export const TextHeader = styled.h1`
 
 export const TextSubHeader = styled.h5`
     color: white;
-    font-family: Segoe UI;
+    font-family: 'Ubuntu', sans-serif;
     margin: 0;
     text-align: center;
     
@@ -82,7 +82,7 @@ export const ArticleTitle = styled.h2`
     text-align: center;
     margin: 0 5vh;
     color: white;
-    font-family: Segoe UI;
+    font-family: 'Ubuntu', sans-serif;
     
     @media ${device.mobileS} { 
          font-size: 6vw;
