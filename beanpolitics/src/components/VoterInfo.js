@@ -45,13 +45,10 @@ class VoterInfo extends Component {
                     if (channel.type === "YouTube") {
                         const link = "http://youtube.com/user/" + channel.id;
                         return <span><i className="fab fa-youtube"></i>&nbsp;YouTube: <a href={link}>{channel.id}</a><br/></span>
-                    }
-                    else if (channel.type === "Twitter") {
+                    } else if (channel.type === "Twitter") {
                         const link = "http://twitter.com/" + channel.id;
                         return <span><i className="fab fa-twitter-square"></i>&nbsp;Twitter: <a href={link}>{channel.id}</a><br/></span>
-                    }
-
-                    else if (channel.type === "Facebook") {
+                    } else {
                         const link = "http://facebook.com/" + channel.id;
                         return <span><i className="fab fa-facebook-square"></i>&nbsp;Facebook: <a href={link}>{channel.id}</a><br/></span>
                     }

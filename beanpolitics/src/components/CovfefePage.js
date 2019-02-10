@@ -22,7 +22,6 @@ class CovfefePage extends Component {
             )
         }
         const data = this.props.redditPost[0].data.children[0].data;
-        console.log(data);
         return (
             <CovfefeContainer redditPostData={data}>
                 {data.title}

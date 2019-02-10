@@ -115,13 +115,27 @@ class CovfefeContainer extends Component {
         this.props.getRandomRedditPost('theonion', 'nottheonion');
     };
 
-    postTitle = () => {
+    postLabel = () => {
+        const data = this.props.redditPostData;
+        if(!data){
+            return ''
+        }
+        if(data.subreddit === 'TheOnion'){
+            return <RedText>Fake: </RedText>
+        } else {
+            return <BlueText>Real: </BlueText>
+        }
+    };
+
+    post = () => {
         const data = this.props.redditPostData;
         if(!data){
             return '';
         }
-        return data.title;
+        return <div>{this.postLabel()}{data.title}</div>;
     };
+
+
 
     postThumbnail = () => {
         const data = this.props.redditPostData;
@@ -143,6 +157,7 @@ class CovfefeContainer extends Component {
         this.setState({
             visible: false,
         });
+        this.props.getRandomRedditPost('theonion', 'nottheonion');
     };
 
     render(){
@@ -214,7 +229,7 @@ class CovfefeContainer extends Component {
                     <RedditImageDisplay>
                         <Image src={this.postThumbnail()} />
                     </RedditImageDisplay>
-                    <h1>{this.postTitle()}</h1>
+                    <h1>{this.post()}</h1>
                     <Button type="danger" onClick={this.openArticle} icon="book">Read Article</Button>
                 </Modal>
             </WhiteHouseBackground>
