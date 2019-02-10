@@ -22,6 +22,8 @@ class Dashboard extends Component {
                        </div>
                    </div>
                </div>
+               <div className="MainMargins2">
+               </div>
                <div className="wave">
                </div>
                <div className="ContentContainer">

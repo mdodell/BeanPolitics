@@ -27,16 +27,21 @@
     padding-left: 4vw;
     padding-right: 4vw;
 }
+.MainMargins2{
+    position: relative;
+    height: 180px;
+    z-index: -1;
+}
 .trapezoid3 {
     margin-top: 2vw;
     display: block;
     animation: trapShow1 3.5s ease;
-    position: relative;
-    margin-left: calc(-250px + 3vw); /**-17vw*/
+    position: absolute;
+    margin-left: calc(-180px + 3vw); /**-17vw*/
     border-color: #002868 transparent transparent transparent;
     border-width: 100px 70px 70px 0;
     height: 0;
-    width: 500px;
+    width: 600px;
     border-style: solid;
     filter: drop-shadow(5px 8px 8px);
 
@@ -49,15 +54,17 @@
     border-color: #BF0A30 transparent transparent transparent;
     border-width: 100px 70px 70px 0;
     height: 0;
-    width: 500px;
+    width: 600px;
     border-style: solid;
     filter: drop-shadow(2px 2px 2px);
 }
 .TrapLetters1{
-    margin-top: -90px;
-    margin-left: 55%;
+    margin-top: -80px;
+    justify-content: center;
+    display: flex;
     font-size: 30px;
     width: 100%;
+    margin-left: 85px;
     color: white;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
@@ -67,7 +74,7 @@
         margin-left: -600vw;
     }
     100% {
-        margin-left: calc(-250px + 3vw);
+        margin-left: calc(-180px + 3vw);
     }
 }
 .wave{
@@ -250,4 +257,7 @@ body{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
     color: #ffffff;
+    padding: 2%;
+    font-size: calc(10px + 1vw);
+    margin-top: 6%;
 }
