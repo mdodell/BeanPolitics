@@ -37,6 +37,9 @@ class CovfefeContainer extends Component {
     }
 
     checkIfReal = () => {
+        if(!this.props.redditPostData){
+            return ''
+        }
         let answer = this.props.redditPostData.subreddit === 'nottheonion' ? true : false;
         if(answer){
             this.increaseRight();
@@ -75,6 +78,9 @@ class CovfefeContainer extends Component {
     };
 
     checkIfFake = () => {
+        if(!this.props.redditPostData){
+            return ''
+        }
         let answer = this.props.redditPostData.subreddit === 'TheOnion' ? true : false;
         if(answer){
             this.increaseRight();
