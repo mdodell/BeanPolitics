@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-import{Button} from "antd";
+import React, { Component } from 'react';
 import './Global.css';
 import CongressPic from "../images/Congress.jpg";
 
