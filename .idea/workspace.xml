@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30f81f5a-4e73-40e9-a932-d0b8fa5b13a3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beanpolitics/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/beanpolitics/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beanpolitics/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/beanpolitics/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beanpolitics/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/beanpolitics/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beanpolitics/src/components/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/beanpolitics/src/components/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beanpolitics/src/components/CovfefeContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/beanpolitics/src/components/CovfefeContainer.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dashboard.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dashboard.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/beanpolitics/src/components/Dashboard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="42" column="124" selection-start-line="42" selection-start-column="124" selection-end-line="42" selection-end-column="124" />
+            <state relative-caret-position="69">
+              <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -53,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CovfefeContainer.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CovfefeContainer.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/beanpolitics/src/components/CovfefeContainer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="155" selection-start-line="155" selection-end-line="155" />
+            <state relative-caret-position="418">
+              <caret line="203" column="46" selection-start-line="203" selection-start-column="46" selection-end-line="203" selection-end-column="46" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -150,10 +146,10 @@
         <option value="$PROJECT_DIR$/beanpolitics/src/apis/reddit.js" />
         <option value="$PROJECT_DIR$/beanpolitics/src/components/styled-components/index.js" />
         <option value="$PROJECT_DIR$/beanpolitics/src/components/Global.css" />
-        <option value="$PROJECT_DIR$/beanpolitics/src/components/CovfefeContainer.js" />
         <option value="$PROJECT_DIR$/beanpolitics/package.json" />
         <option value="$PROJECT_DIR$/beanpolitics/src/components/App.js" />
         <option value="$PROJECT_DIR$/beanpolitics/src/components/Dashboard.js" />
+        <option value="$PROJECT_DIR$/beanpolitics/src/components/CovfefeContainer.js" />
       </list>
     </option>
   </component>
@@ -2927,7 +2923,7 @@
       <updated>1549677094525</updated>
       <workItem from="1549677095817" duration="2918000" />
       <workItem from="1549759572646" duration="1927000" />
-      <workItem from="1549861173391" duration="3908000" />
+      <workItem from="1549861173391" duration="4492000" />
     </task>
     <task id="LOCAL-00001" summary="Set up React-Router with initial page!">
       <created>1549684298792</created>
@@ -2999,15 +2995,21 @@
       <option name="project" value="LOCAL" />
       <updated>1549862130519</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Set up hosting/routing so the website can be hosted on Github Pages.">
+      <created>1549865590866</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1549865590867</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46242000" />
+    <option name="totallyTimeSpent" value="46826000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="832" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2015504" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -3065,7 +3067,8 @@
     <MESSAGE value="Added Modal to Covfefe that showcases article image and title." />
     <MESSAGE value="Slightly refactored Covfefe." />
     <MESSAGE value="Got rid of extra console.log in Covfefe." />
-    <option name="LAST_COMMIT_MESSAGE" value="Got rid of extra console.log in Covfefe." />
+    <MESSAGE value="Set up hosting/routing so the website can be hosted on Github Pages." />
+    <option name="LAST_COMMIT_MESSAGE" value="Set up hosting/routing so the website can be hosted on Github Pages." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/beanpolitics/src/index.js">
@@ -3189,30 +3192,6 @@
     <entry file="file://$PROJECT_DIR$/beanpolitics/public/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/beanpolitics/src/components/Global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="93" column="22" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beanpolitics/src/components/CovfefePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beanpolitics/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/beanpolitics/src/components/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -3230,20 +3209,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beanpolitics/src/components/CovfefeContainer.js">
+    <entry file="file://$PROJECT_DIR$/beanpolitics/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="155" selection-start-line="155" selection-end-line="155" />
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beanpolitics/src/components/Global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="93" column="22" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beanpolitics/src/components/Dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beanpolitics/src/components/Dashboard.js">
+    <entry file="file://$PROJECT_DIR$/beanpolitics/src/components/CovfefePage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="42" column="124" selection-start-line="42" selection-start-column="124" selection-end-line="42" selection-end-column="124" />
+        <state relative-caret-position="69">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beanpolitics/src/components/CovfefeContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="203" column="46" selection-start-line="203" selection-start-column="46" selection-end-line="203" selection-end-column="46" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

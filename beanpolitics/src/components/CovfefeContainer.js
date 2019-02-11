@@ -177,7 +177,7 @@ class CovfefeContainer extends Component {
 
                     <Col span={24}>
                         <Row type="flex" align="middle" justify="space-around">
-                            <Col xs={{span: 24, order: 0}} sm={{span: 8, order: 0}}>
+                            <Col xs={{span: 12, order: 0}} sm={{span: 8, order: 0}}>
                                 <Row type="flex" justify="center">
                                     <VerticleMarginOnStack>
                                         <Button type="primary" onClick={this.checkIfReal}>Real News</Button>
@@ -201,7 +201,7 @@ class CovfefeContainer extends Component {
                                 </Col>
 
 
-                            <Col xs={{span: 24, order: 0}} sm={{span: 8, order: 0}}>
+                            <Col xs={{span: 12, order: 0}} sm={{span: 8, order: 0}}>
                                 <Row type="flex" justify="center">
                                     <VerticleMarginOnStack>
                                         <Button type="primary" onClick={this.checkIfFake}>
