@@ -2,11 +2,13 @@
   "name": "beanpolitics",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mdodell.github.io/BeanPolitics/",
   "dependencies": {
     "antd": "^3.13.2",
     "axios": "^0.18.0",
     "babel-plugin-import": "^1.11.0",
     "customize-cra": "^0.2.11",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.1",
     "react-app-rewired": "^2.1.0",
     "react-dom": "^16.8.1",
@@ -26,6 +28,8 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

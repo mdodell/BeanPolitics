@@ -28,7 +28,7 @@ class Dashboard extends Component {
                </div>
                <div className="ContentContainer">
                <div className="ContentBox">
-                   <div className="InnerImage InnerImageSpec1" onClick={function(){window.location.href='/voterInfo'}}>
+                   <div className="InnerImage InnerImageSpec1" onClick={() => window.location.href='/BeanPolitics/#/voterInfo'}>
                        <div className="InnerTitleTxt">
                            <h1 className="emphasis">Civic Info Hub</h1>
                        </div>
@@ -40,7 +40,7 @@ class Dashboard extends Component {
                    </div>
                </div>
                <div className="ContentBox">
-                   <div className="InnerImage InnerImageSpec2" onClick={function() {window.location.href='/covfefe'}}>
+                   <div className="InnerImage InnerImageSpec2" onClick={() => window.location.href='/BeanPolitics/#/covfefe'}>
                        <div className="InnerTitleTxt">
                            <h1 className="emphasis">Covfefe.io</h1>
                        </div>
@@ -52,7 +52,7 @@ class Dashboard extends Component {
                    </div>
                </div>
                <div className="ContentBox">
-                   <div className="InnerImage InnerImageSpec3" onClick={function(){window.location.href='/voterInfo'}}>
+                   <div className="InnerImage InnerImageSpec3" onClick={() => window.location.href='/BeanPolitics/#/voterInfo'}>
                        <div className="InnerTitleTxt">
                            <h1 className="emphasis">Data Archive</h1>
                        </div>
