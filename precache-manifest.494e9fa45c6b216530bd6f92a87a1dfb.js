@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/BeanPolitics/static/media/placeholder.1a89fdd0.png"
   },
   {
-    "revision": "c195b931a221da6d542c",
+    "revision": "c8d7f05035ad05bacaad",
     "url": "/BeanPolitics/static/css/main.85b611cc.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/BeanPolitics/static/js/runtime~main.956ad18e.js"
   },
   {
-    "revision": "c195b931a221da6d542c",
-    "url": "/BeanPolitics/static/js/main.c195b931.chunk.js"
+    "revision": "c8d7f05035ad05bacaad",
+    "url": "/BeanPolitics/static/js/main.c8d7f050.chunk.js"
   },
   {
     "revision": "4c4b2e5b008a4040b7b4266bebddb3ac",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/BeanPolitics/static/css/1.861fc192.chunk.css"
   },
   {
-    "revision": "3508bc2a9aa408862a3f815ec0e64933",
+    "revision": "b4305664de07e2023642e086936c59c5",
     "url": "/BeanPolitics/index.html"
   }
 ];
