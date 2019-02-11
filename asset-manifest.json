@@ -1,7 +1,7 @@
 {
   "main.css": "/BeanPolitics/static/css/main.85b611cc.chunk.css",
-  "main.js": "/BeanPolitics/static/js/main.146ce3d0.chunk.js",
-  "main.js.map": "/BeanPolitics/static/js/main.146ce3d0.chunk.js.map",
+  "main.js": "/BeanPolitics/static/js/main.4f98c896.chunk.js",
+  "main.js.map": "/BeanPolitics/static/js/main.4f98c896.chunk.js.map",
   "static/css/1.861fc192.chunk.css": "/BeanPolitics/static/css/1.861fc192.chunk.css",
   "static/js/1.83169af8.chunk.js": "/BeanPolitics/static/js/1.83169af8.chunk.js",
   "static/js/1.83169af8.chunk.js.map": "/BeanPolitics/static/js/1.83169af8.chunk.js.map",
@@ -12,9 +12,9 @@
   "static/media/Congress.jpg": "/BeanPolitics/static/media/Congress.6d533586.jpg",
   "static/media/Global.css": "/BeanPolitics/static/media/matrixCode.3dc4eefa.jpg",
   "static/media/whiteHouse.jpg": "/BeanPolitics/static/media/whiteHouse.4c4b2e5b.jpg",
-  "static/css/1.861fc192.chunk.css.map": "/BeanPolitics/static/css/1.861fc192.chunk.css.map",
   "static/css/main.85b611cc.chunk.css.map": "/BeanPolitics/static/css/main.85b611cc.chunk.css.map",
+  "static/css/1.861fc192.chunk.css.map": "/BeanPolitics/static/css/1.861fc192.chunk.css.map",
   "index.html": "/BeanPolitics/index.html",
-  "precache-manifest.0cee3c3b45205b3186c70095a59ed8b4.js": "/BeanPolitics/precache-manifest.0cee3c3b45205b3186c70095a59ed8b4.js",
+  "precache-manifest.ba831b5202951a05aed464f50bb7451c.js": "/BeanPolitics/precache-manifest.ba831b5202951a05aed464f50bb7451c.js",
   "service-worker.js": "/BeanPolitics/service-worker.js"
 }
