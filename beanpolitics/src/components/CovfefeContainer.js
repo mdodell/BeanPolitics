@@ -63,16 +63,9 @@ class CovfefeContainer extends Component {
             rightPercent = (this.state.rightCount / this.state.totalCount) * 100;
         }
 
-        let wrongPercent = 0;
-
-        if(this.state.wrongCount !== 0){
-            wrongPercent = (this.state.wrongCount / this.state.totalCount) * 100;
-        }
-
         this.setState({
-            totalPercent: totalPercent,
-            rightPercent: rightPercent,
-            wrongPercent: wrongPercent,
+            totalPercent,
+            rightPercent
         })
 
     };
@@ -89,7 +82,7 @@ class CovfefeContainer extends Component {
         }
         this.increaseTotal();
         this.showModal();
-        this.setState({playStatus: Sound.status.PLAYING});
+        this.setState({ playStatus: Sound.status.PLAYING });
         return answer;
     };
 
@@ -126,27 +119,18 @@ class CovfefeContainer extends Component {
         this.props.getRandomRedditPost('theonion', 'nottheonion');
     };
 
-    postLabel = () => {
+    postText = () => {
         const data = this.props.redditPostData;
-        if(!data){
-            return ''
-        }
-        if(data.subreddit === 'TheOnion'){
-            return <RedText>Fake: </RedText>
-        } else {
-            return <BlueText>Real: </BlueText>
-        }
-    };
-
-    post = () => {
-        const data = this.props.redditPostData;
-        if(!data){
+        if(!data) {
             return '';
         }
-        return <div>{this.postLabel()}{data.title}</div>;
+        const { title } = data;
+        if(data.subreddit === 'TheOnion'){
+            return (<div><RedText>Fake: </RedText>{title}</div>)
+        } else {
+            return (<div><BlueText>Real: </BlueText>{title}</div>)
+        }
     };
-
-
 
     postThumbnail = () => {
         const data = this.props.redditPostData;
@@ -231,12 +215,14 @@ class CovfefeContainer extends Component {
                         </Row>
                     </Col>
                 </Row>
+
                 <Sound
                     volume={100}
                     url={fakeNewsSound}
                     playStatus={this.state.playStatus}
                     onFinishedPlaying={() => this.setState({ playStatus: Sound.status.STOPPED })}
                 ></Sound>
+
                 <Modal
                     centered
                     visible={this.state.visible}
@@ -247,7 +233,7 @@ class CovfefeContainer extends Component {
                     <RedditImageDisplay>
                         <Image src={this.postThumbnail()} />
                     </RedditImageDisplay>
-                    <h1>{this.post()}</h1>
+                    <h1>{this.postText()}</h1>
                     <Button type="danger" onClick={this.openArticle} icon="book">Read Article</Button>
                 </Modal>
             </WhiteHouseBackground>
