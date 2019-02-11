@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/BeanPolitics/static/media/placeholder.1a89fdd0.png"
   },
   {
-    "revision": "7d054520806f34917193",
+    "revision": "c195b931a221da6d542c",
     "url": "/BeanPolitics/static/css/main.85b611cc.chunk.css"
   },
   {
@@ -12,16 +12,16 @@ self.__precacheManifest = [
     "url": "/BeanPolitics/static/media/matrixCode.3dc4eefa.jpg"
   },
   {
-    "revision": "358a3120d60360a8a924",
-    "url": "/BeanPolitics/static/js/1.358a3120.chunk.js"
+    "revision": "83169af82c10ec2a1841",
+    "url": "/BeanPolitics/static/js/1.83169af8.chunk.js"
   },
   {
     "revision": "956ad18e056ee777522a",
     "url": "/BeanPolitics/static/js/runtime~main.956ad18e.js"
   },
   {
-    "revision": "7d054520806f34917193",
-    "url": "/BeanPolitics/static/js/main.7d054520.chunk.js"
+    "revision": "c195b931a221da6d542c",
+    "url": "/BeanPolitics/static/js/main.c195b931.chunk.js"
   },
   {
     "revision": "4c4b2e5b008a4040b7b4266bebddb3ac",
@@ -36,11 +36,11 @@ self.__precacheManifest = [
     "url": "/BeanPolitics/static/media/Congress.6d533586.jpg"
   },
   {
-    "revision": "358a3120d60360a8a924",
+    "revision": "83169af82c10ec2a1841",
     "url": "/BeanPolitics/static/css/1.861fc192.chunk.css"
   },
   {
-    "revision": "e989de0991cfce316b770f2470ba672d",
+    "revision": "3508bc2a9aa408862a3f815ec0e64933",
     "url": "/BeanPolitics/index.html"
   }
 ];

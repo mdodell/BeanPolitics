@@ -1,10 +1,10 @@
 {
   "main.css": "/BeanPolitics/static/css/main.85b611cc.chunk.css",
-  "main.js": "/BeanPolitics/static/js/main.7d054520.chunk.js",
-  "main.js.map": "/BeanPolitics/static/js/main.7d054520.chunk.js.map",
+  "main.js": "/BeanPolitics/static/js/main.c195b931.chunk.js",
+  "main.js.map": "/BeanPolitics/static/js/main.c195b931.chunk.js.map",
   "static/css/1.861fc192.chunk.css": "/BeanPolitics/static/css/1.861fc192.chunk.css",
-  "static/js/1.358a3120.chunk.js": "/BeanPolitics/static/js/1.358a3120.chunk.js",
-  "static/js/1.358a3120.chunk.js.map": "/BeanPolitics/static/js/1.358a3120.chunk.js.map",
+  "static/js/1.83169af8.chunk.js": "/BeanPolitics/static/js/1.83169af8.chunk.js",
+  "static/js/1.83169af8.chunk.js.map": "/BeanPolitics/static/js/1.83169af8.chunk.js.map",
   "runtime~main.js": "/BeanPolitics/static/js/runtime~main.956ad18e.js",
   "runtime~main.js.map": "/BeanPolitics/static/js/runtime~main.956ad18e.js.map",
   "static/media/placeholder.png": "/BeanPolitics/static/media/placeholder.1a89fdd0.png",
@@ -15,6 +15,6 @@
   "static/css/main.85b611cc.chunk.css.map": "/BeanPolitics/static/css/main.85b611cc.chunk.css.map",
   "static/css/1.861fc192.chunk.css.map": "/BeanPolitics/static/css/1.861fc192.chunk.css.map",
   "index.html": "/BeanPolitics/index.html",
-  "precache-manifest.026a8aefac14d6e7506142c329624348.js": "/BeanPolitics/precache-manifest.026a8aefac14d6e7506142c329624348.js",
+  "precache-manifest.c83f154cd200e0ab1458566d6fbff67b.js": "/BeanPolitics/precache-manifest.c83f154cd200e0ab1458566d6fbff67b.js",
   "service-worker.js": "/BeanPolitics/service-worker.js"
 }
